@@ -1,0 +1,12 @@
+<% extend 'layout' %>
+<h1><%= @title %></h1>
+
+<p><%= @msg %></p>
+
+<form method='post' action='/login'>
+	id<input type='text' name='email' value='myname'>
+	<br>
+	pass<input type='text' name='password' value='mypassword'>
+	<br>
+	<button type='submit'>login</button>
+</form>
