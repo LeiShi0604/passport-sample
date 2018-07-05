@@ -28,8 +28,8 @@ router.post(
 		res.sendStatus(200);
 	}
 );
-//mypageに遷移する場合
-router.get('/testmypage', function(req, res, next){
+//各apiリクエストに対して認証を行う
+router.get('/testsession', function(req, res, next){
 	//認証チェック
 	if(req.user){
 		//認証済

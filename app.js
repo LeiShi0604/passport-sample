@@ -42,7 +42,7 @@ passport.use(
 			//routerのpassport.authenticate()が呼ばれたらここの処理が走る。
 			//実際にはDBを参照
 
-			//サンプルユーザー
+			//モック用ユーザー
 			if(username == 'test' && password == 'testpw'){
 				console.log("ログイン with email :"+username);
         		return done(null, username);
